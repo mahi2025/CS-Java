@@ -1,26 +1,20 @@
 import java.util.Scanner;
-import java.time.LocalDateTime;
-import java.time.Duration;
 /*
 purpose: Temperature conversion program
 Author name:
-Date: [Automatically generated]
+Date: Apr 7/2025
+start and finish time: 11:00 am - 11:30 am
+     - convert celsius to fahrenheit and vice versa based on the user's preference
 */
 
 public class Exercise2{
-    private static LocalDateTime startTime;
-    private static LocalDateTime endTime;
-
     public static void main(String[] args){
-        // Record start time
-        startTime = LocalDateTime.now();
-        System.out.println("Program started at: " + startTime);
-
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Temperature Converter");
+        System.out.println("Temeperature Converter");
         System.out.println("1. Fahrenheit to celsius");
         System.out.println("2. Celsius to Fahrenheit");
+
 
         System.out.println("Enter your choice number");
         int choiceNumber = input.nextInt();
@@ -40,17 +34,5 @@ public class Exercise2{
         else{
             System.out.println("Invalid choice");
         }
-
-        // Record end time and calculate duration
-        endTime = LocalDateTime.now();
-        System.out.println("\nProgram ended at: " + endTime);
-        
-        Duration duration = Duration.between(startTime, endTime);
-        long minutes = duration.toMinutes();
-        long seconds = duration.toSecondsPart();
-        
-        System.out.println("Total time taken: " + minutes + " minutes and " + seconds + " seconds");
-        
-        input.close();
     }
 }
