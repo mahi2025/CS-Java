@@ -6,7 +6,7 @@ purpose: reads the user age and tell their scope
 
 import java.util.Scanner;
 
-public class Exercise4{
+public class ageScope{
     public static void main(String[]args){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Your age: ");

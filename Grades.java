@@ -1,12 +1,11 @@
 import java.util.Scanner;
 /*
-purpose: To tell studnets their grade baes on their scale 
-Author name: Mahi Masre
+purpose: To tell studnets their grade based on their scale 
     - Take input form the user
     - Give their grades based on their scale
 */
 
-public class Exercise1{
+public class Grades{
     public static void main(String[]args){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your percentage: ");
