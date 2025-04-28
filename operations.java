@@ -10,10 +10,11 @@ public class operations {
         System.out.println("1. Fahrenheit to Celsius");
         System.out.println("2. Celsius to Fahrenheit");
         System.out.println("3. Arithmetic");
-        System.out.println("4. Swap");
+        System.out.println("4. Arthmetic Calculator");
         System.out.println("5. Area of circle");
-        
-        System.out.print("Enter your choice (1-5): ");
+        System.out.println("6. Area of Triangle");
+        System.out.println("7. Swap");
+        System.out.print("Enter your choice (1-7): ");
         int choice = input.nextInt();
 
         switch(choice) {
@@ -54,8 +55,73 @@ public class operations {
                 System.out.println("the quotient is "+quotient);
                 break;
 
-            case 4:
-                System.out.println("Swapping selected");
+            case 4: //Arithmetic Calculator
+                System.out.println("Arithmetic Calculator");
+                System.out.println("Enter the first number: ");
+                int calcNum1 = input.nextInt();
+                
+                System.out.println("Enter the operator from (+,-,*,/)");
+                char calcOperator = input.next().charAt(0);
+
+                System.out.println("Enter the second number: ");
+                int calcNum2 = input.nextInt();
+
+                int calcResult = 0;
+                boolean validOperator = true;
+
+                switch(calcOperator){
+                    case '+':
+                        calcResult = calcNum1 + calcNum2;
+                        break;
+                    case '-':
+                        calcResult = calcNum1 - calcNum2;
+                        break;
+                    case '*':
+                        calcResult = calcNum1 * calcNum2;
+                        break;
+                    case '/': 
+                        if (calcNum2 != 0) {
+                            calcResult = calcNum1 / calcNum2;
+                        } else {
+                            System.out.println("Error: Division by zero is not allowed!");
+                            validOperator = false;
+                        }
+                        break;
+                    default:
+                        System.out.println("Error: Invalid operator!");
+                        validOperator = false;
+                }
+                
+                if (validOperator) {
+                    System.out.println(calcNum1 + " " + calcOperator + " " + calcNum2 + " = " + calcResult);
+                }
+                break;
+                
+            case 5:
+                System.out.println("Area of circle");
+                System.out.println("Enter the radius: ");
+                    double radius = input.nextInt();
+                
+                final double PI = 3.14;
+                double Area = PI *radius*radius;
+
+                System.out.println("The Area is: " + Area);
+                break;  
+            case 6: 
+                    System.out.println("Area of Triangle");
+                    
+                    System.out.println("Enter the base: ");
+                     double base = input.nextDouble();
+                    System.out.println("Enter the height: ");
+                    double height = input.nextDouble();
+                
+            
+                     Area = (base*height)/2;
+
+                System.out.println("The Area of triangle is: " + Area);
+                break;  
+            case 7:
+                System.out.println("Swapping");
                 int x = 10;
                 int y = 8;
                 int z = 12;
@@ -76,19 +142,8 @@ public class operations {
                 System.out.println("z = " + z);
                 break;
 
-            case 5:
-                System.out.println("Area of circle selected");
-                System.out.println("Enter the radius: ");
-                    double radius = input.nextInt();
-                
-                final double PI = 3.14;
-                double Area = PI *radius*radius;
-
-                System.out.println("The Area is: " + Area);
-                break;  
-                
             default:
-                System.out.println("Invalid choice! Please select between 1-5");
+                System.out.println("Invalid choice! Please select between 1-7");
         }
     }
 }
