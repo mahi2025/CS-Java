@@ -1,12 +1,12 @@
 /*
-    purpose: Calculate the sum of the digits of a six-digit integer.
-    - prompt for input six digit integer
-    - use / and % to extract the digits from the integer
+    purpose: Calculate the sum of the digits of a six-digit integer
+    Steps: 1. prompt for input six digit integer
+             2. use / and % to extract the digits from the integer
 */
 
 import java.util.Scanner;
 
-public class Exercise6{
+public class sumOfDigits{
     public static void main(String[]args){
         Scanner input = new Scanner(System.in);
 

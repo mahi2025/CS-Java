@@ -1,14 +1,13 @@
 /*
 purpose: multiple of the other using conditional operators
-    - take weo integer from user
-    -promot for input
-    -use conditional operator tp check if the first integer is a multiple of the second
-    -display the result
+    Steps: 1.Take two integer from user
+            2. use conditional operator to check if the first integer is a multiple of the second
+            3. display the result
 */
 
 import java.util.Scanner;
 
-public class Exercise5{
+public class multipleOfNum {
     public static void main(String[]args){
 
         Scanner input = new Scanner(System.in);
@@ -23,4 +22,4 @@ public class Exercise5{
 
         input.close();
     }
-
+}

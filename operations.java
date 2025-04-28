@@ -1,6 +1,8 @@
 import java.util.Scanner;
-
-public class SwitchForAll {
+/**
+ Purpose: different operation using switch
+ */
+public class operations {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         

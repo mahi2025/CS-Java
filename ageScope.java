@@ -1,7 +1,7 @@
 /*
 purpose: reads the user age and tell their scope
-        -take users age
-        -tell their scope based on their age
+        Steps: 1. take users age
+            2. tell their scope based on their age
 */
 
 import java.util.Scanner;
