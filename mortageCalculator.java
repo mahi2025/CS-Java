@@ -33,6 +33,7 @@ public class mortageCalculator{
         String mortageFormatted = NumberFormat.getCurrencyInstance().format(mortage);
 
         System.out.println("Mortage: " + mortageFormatted);
+        
         input.close();
     }
 }
