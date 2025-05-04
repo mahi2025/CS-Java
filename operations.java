@@ -80,12 +80,11 @@ public class operations {
                         calcResult = calcNum1 * calcNum2;
                         break;
                     case '/': 
-                        if (calcNum2 != 0) {
+                       if (calcNum2 != 0) {
                             calcResult = calcNum1 / calcNum2;
                         } else {
                             System.out.println("Error: Division by zero is not allowed!");
                             validOperator = false;
-                        }
                         break;
                     default:
                         System.out.println("Error: Invalid operator!");
