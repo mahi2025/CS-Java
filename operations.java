@@ -85,6 +85,7 @@ public class operations {
                         } else {
                             System.out.println("Error: Division by zero is not allowed!");
                             validOperator = false;
+                        }
                         break;
                     default:
                         System.out.println("Error: Invalid operator!");
